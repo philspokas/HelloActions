@@ -9,7 +9,7 @@ jobs:
             - name: Hello world
               uses: actions/hello-world-javascript-action@v1
               with:
-                who-to-greet: "sam i am"
+                who-to-greet: ${{ github.actor }}
               id: hello
 
             - name: Echo the greeting time
